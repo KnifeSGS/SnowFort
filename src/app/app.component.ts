@@ -10,4 +10,11 @@ import { ButtonModule } from 'primeng/button';
 })
 export class AppComponent {
   title = 'snowfort';
+
+  toggleDarkMode() {
+    const element = document.querySelector('html');
+    if (element) {
+      element.classList.toggle('my-app-dark');
+    }
+  }
 }
